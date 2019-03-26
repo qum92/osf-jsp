@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- <script>
+	var test = function(){
+		alert(this==window)
+	}
+	var t = new test();
+	alert(t==window);
+</script>
+ --><!-- <script>
+	var arr = [];
+	arr[arr.length] = 1;
+	arr[arr.length] = 1;
+	alert(arr[0]);
+	alert(arr[1]);
+	var arr2 = new Array();
+</script> -->
+<!-- <script>
+	var arr = [];
+	arr[arr.length] = 1;
+	arr[arr.length] = 1;
+	arr.push(3);
+	alert(arr[2]);
+	var map = {};
+	map.key = 'value';
+	map['key'] = '난 다른 value';
+	alert(map.key);
+</script> -->
+<!-- <script>
+	var result = [{"message":{"result":{"translatedText":"내가 아까 걔가 아니야.""}}}];
+	var str = JSON.stringify(result);
+	alert(str);
+</script> -->
+<script>
+	var req = new XMLHttpRequest();
+	req.open('GET','/trans');
+	req.onreadystatechange = function(){
+		if(req.readyState == 4 && req.status==200){
+			document.querySelector('#rDiv').innerHTML = req.response;
+		}
+	}
+	req.send();
+</script>
+<div id="rDiv"></div>
+</body>
+</html>

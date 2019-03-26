@@ -5,11 +5,31 @@
     <welcome-file>/views/index.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
- 	 <servlet-name>PBoardServlet</servlet-name>
- 	 <servlet-class>com.osf.test.servlet.PBoardServlet</servlet-class>
+    <servlet-name>PBoardServlet</servlet-name>
+    <servlet-class>com.osf.test.servlet.PBoardServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>PBoardServlet</servlet-name>
-  	<url-pattern>/pboard/*</url-pattern>
+    <servlet-name>PBoardServlet</servlet-name>
+    <url-pattern>/pboard/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>FoodServlet</servlet-name>
+    <servlet-class>com.osf.test.servlet.FoodServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodServlet</servlet-name>
+    <url-pattern>/food/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodServlet</servlet-name>
+    <url-pattern>/foods/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>TransServlet</servlet-name>
+  	<servlet-class>com.osf.test.servlet.TransServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TransServlet</servlet-name>
+  	<url-pattern>/trans/*</url-pattern>
   </servlet-mapping>
 </web-app>
